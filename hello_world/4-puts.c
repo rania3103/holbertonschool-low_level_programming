@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description:a C program that prints Programming is like building a multilingual puzzle
+ * Description:a C program that prints a message
  *
  * Return: Always 0 (Success)
  *
