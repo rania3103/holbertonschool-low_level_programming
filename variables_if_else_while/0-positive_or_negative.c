@@ -1,12 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** more headers goes there
-*main - Entry point
+/**
+* main - Entry point
 *
-*Description:print negative or positive for the random number
-*
-* betty style doc for function main goes there
+* Description: Prints whether a random number is negative, positive, or zero.
+* 
+* Return: Always 0 (Success)
 */
 int main(void)
 {
