@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
+/*Description:print negative or positive for the random number*/
 /* betty style doc for function main goes there */
 int main(void)
 {
