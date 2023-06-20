@@ -4,7 +4,7 @@
 /**
 * main - Entry point
 *
-* Description: Prints whether a last digit of a random number isgreater than 5 or in less than 6 and not.
+* Description: Prints last digit of a random number.
 *
 * Return: Always 0 (Success)
 */
