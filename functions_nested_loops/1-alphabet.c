@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - Entry point
+* print_alphabet - Entry point
 *
 * Description: Prints last digit of a random number.
 *
