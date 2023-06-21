@@ -9,6 +9,7 @@ int _isalpha(int c)
 {
 	int test = 0;
 	int asc = 65;
+
 	while (asc <= 122)
 	{
 		if (asc >= 91 && asc <= 96)
