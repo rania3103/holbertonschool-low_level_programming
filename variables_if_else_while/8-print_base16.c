@@ -21,4 +21,5 @@ while (ci <= 'f')
 	ci++;
 }
 putchar('\n');
+return (0);
 }
