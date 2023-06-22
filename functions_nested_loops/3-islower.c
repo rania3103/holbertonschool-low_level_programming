@@ -3,6 +3,7 @@
 *
 * Description: checks for lowercase character..
 *@c:integer
+* Return: Always 0 (Success)
 */
 int _islower(int c)
 {
