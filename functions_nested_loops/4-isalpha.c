@@ -2,25 +2,15 @@
 * _isalpha - Entry point
 *
 * Description: checks for alphabetic character.
-*
+*c:character
 * Return: Always 0 (Success)
 */
 int _isalpha(int c)
 {
 	int test = 0;
-	int asc = 65;
-
-	while (asc <= 122)
+	if ( ( c >= 65 && c <= 90) || ( c >= 84 && c <= 122) )
 	{
-		if (asc >= 91 && asc <= 96)
-		{
-			break;
-		}
-		if (c == asc)
-		{
-			test = 1;
-		}
-	asc++;
+		test = 1;
 	}
-return (test);
+	return (test);
 }
