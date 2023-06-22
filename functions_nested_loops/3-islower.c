@@ -2,8 +2,7 @@
 * _islower - Entry point
 *
 * Description: checks for lowercase character..
-*
-* Return: Always 0 (Success)
+*@c:integer
 */
 int _islower(int c)
 {
