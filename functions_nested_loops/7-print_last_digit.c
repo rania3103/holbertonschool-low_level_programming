@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * print_last_digit - Entry point
 *
@@ -11,11 +12,12 @@ int print_last_digit(int n)
 
 	if (n < 0)
 	{
-		x = -1 * (n % 10);
+		x = (-n) % 10;
 	}
 	else
 	{
 		x = n % 10;
 	}
+	_putchar(x + 48);
 	return (x);
 }
