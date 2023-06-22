@@ -4,7 +4,7 @@
 * print_sign - Entry point
 *
 * Description: Prints prints the sign of a number.
-*
+*@n: number
 * Return: Always 0 (Success)
 */
 int print_sign(int n)
