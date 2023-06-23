@@ -19,7 +19,8 @@ for (i = 0; i <= 9; i++)
 
 		if (res <= 9)
 		{
-			if (j > 0){
+			if (j > 0)
+			{
 				_putchar(' ');
 			}
 			_putchar(res + 48);
