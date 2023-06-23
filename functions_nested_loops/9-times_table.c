@@ -19,12 +19,12 @@ for (i = 0; i <= 9; i++)
 
 		if (res <= 9)
 		{
+			_putchar(' ');
 			_putchar(res + 48);
 			if (j < 9)
 			{
 				_putchar(',');
 			}
-			_putchar(' ');
 			_putchar(' ');
 		}
 		else
