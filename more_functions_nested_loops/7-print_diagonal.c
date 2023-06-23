@@ -6,10 +6,10 @@
 *@n:inetegr
 * Return: Always 0 (Success)
 */
- void print_diagonal(int n)
+void print_diagonal(int n)
 {
-	int i ,j;
-	
+	int i, j;
+
 	if (n >= 1)
 	{
 		for (i = 0; i < n; i++)
@@ -20,8 +20,10 @@
 			}
 			_putchar(92);
 			_putchar('\n');
-			
 		}
 	}
+	else
+	{
 		_putchar('\n');
+	}
 }
