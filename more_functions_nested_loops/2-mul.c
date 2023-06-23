@@ -3,7 +3,8 @@
 * mul - Entry point
 *
 * Description:a function that multiplies two integers.
-*@a,b:integer
+*@a:inetger
+*@b:ineteger
 * Return: Always 0 (Success)
 */
 int mul(int a, int b)
