@@ -11,9 +11,9 @@ void more_numbers(void)
 	char c[] = "01234567891011121314";
 	int i, j;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 20; j++)
+		for (j = 0; j < 20; j++)
 		{
 			_putchar(c[j]);
 		}
