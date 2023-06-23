@@ -10,7 +10,7 @@ int _isupper(int c)
 {
 	int test = 0;
 
-	if(c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		test = 1;
 	}
