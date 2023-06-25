@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
 *main -Entry-point
 *
@@ -14,47 +14,47 @@ int main(void)
         {
                 if (i % 3 == 0)
                 {
-                        _putchar('F');
-                        _putchar('i');
-                        _putchar('z');
-                        _putchar('z');
-			_putchar(' ');
+                        putchar('F');
+                        putchar('i');
+                        putchar('z');
+                        putchar('z');
+			putchar(' ');
                 }
 		else if (i % 5 == 0)
                 {
-                        _putchar('B');                       
-			_putchar('u');
-                        _putchar('z');
-			_putchar('z');
-			_putchar(' ');
+                        putchar('B');                       
+			putchar('u');
+                        putchar('z');
+			putchar('z');
+			putchar(' ');
 		}
 		else if (i % 15 == 0)
                 {
-                        _putchar('F');
-                        _putchar('i');
-                        _putchar('z');
-                        _putchar('z');
-			_putchar('B');
-                        _putchar('u');
-                        _putchar('z');
-                        _putchar('z');
-			_putchar(' ');
+                        putchar('F');
+                        putchar('i');
+                        putchar('z');
+                        putchar('z');
+			putchar('B');
+                        putchar('u');
+                        putchar('z');
+                        putchar('z');
+			putchar(' ');
                 }
 		else
 		{
 			if (i < 10)
 			{
-				_putchar(i + 48);
-				_putchar(' ');
+				putchar(i + 48);
+				putchar(' ');
 			}
 			else
 			{
-				_putchar(i / 10 + 48);
-				_putchar(i % 10 + 48);
-				_putchar(' ');
+				putchar(i / 10 + 48);
+				putchar(i % 10 + 48);
+				putchar(' ');
 			}
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
