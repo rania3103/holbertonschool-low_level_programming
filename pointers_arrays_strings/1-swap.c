@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - Entry point
+*swap_int - Entry point
 *
 * Description: swaps the values of two integers.
 *@a:inetegr;
