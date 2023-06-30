@@ -3,7 +3,7 @@
 *  print_rev - Entry point
 * 
 * Description: prints a string in reverse.
-* @s: string
+* @s: pointer
 * Return: void
 */
 void print_rev(char *s)
