@@ -18,9 +18,12 @@ void puts_half(char *str)
     }
     if (nb % 2 != 0)
     {
-        nb -= 1;
+        half = str +(nb -1) / 2;
     }
-    half = str + (nb/2);
+    else
+    {
+        half = str + (nb/2);
+    }
     e = str + nb;
     while (half < e)
     {
