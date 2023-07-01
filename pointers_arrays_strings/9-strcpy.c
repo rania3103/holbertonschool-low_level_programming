@@ -5,7 +5,7 @@
 * Description: copy string.
 * @dest: pointer
 * @src: pointer
-* Return: void
+* Return: pointer
 */
 char *_strcpy(char *dest, char *src)
 {
