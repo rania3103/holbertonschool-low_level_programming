@@ -9,12 +9,12 @@ char *cap_string(char *ch)
 {
 	char *ptr = ch;
 
+	if (*ch >= 'a' && *ch <= 'z')
+	{
+		*ch -= 32;
+	}
 	while (*ch != '\0')
 	{
-		if (*ch >= 'a' && *ch <= 'z')
-		{
-			*ch -= 32;
-		}
 		if (*ch == ' ' || *ch == '"' || *ch == ',' || *ch == ';' || *ch == '?' || *ch =='!' || *ch =='{' || *ch =='}' || *ch =='(' || *ch ==')' || *ch == '.' || *ch == '\t' || *ch == '\n')
 		{
 			ch++;
