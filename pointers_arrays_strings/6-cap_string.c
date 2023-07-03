@@ -19,7 +19,10 @@ char *cap_string(char *ch)
 				*ch -= 32;
 			}
 		}
-		ch++;
+		else
+		{
+			ch++;
+		}
 	}
 	return (ptr);
 }
