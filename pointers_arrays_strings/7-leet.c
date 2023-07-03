@@ -9,8 +9,8 @@
 char *leet(char *ch)
 {
     char *ptr = ch;
-    char num[] = {'4','3','0','7','1'};
-    char c[]= {'A','E','O','T','L'};
+    char num[] = {'4', '3', '0', '7', '1'};
+    char c[]= {'A', 'E' , 'O', 'T', 'L'};
 	int i = 0;
 
     while (*ch != '\0')
