@@ -9,6 +9,7 @@ char *cap_string(char *ch)
 {
 	char *ptr = ch;
 
+	*ch -= 32;
 	while (*ch != '\0')
 	{
 		if (*ch == ' ' || *ch == '"' || *ch == ',' || *ch == ';' || *ch == '?' || *ch =='!' || *ch =='{' || *ch =='}' || *ch =='(' || *ch ==')' || *ch == '.' || *ch == '\t' || *ch == '\n')
