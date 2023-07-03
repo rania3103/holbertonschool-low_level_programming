@@ -20,6 +20,7 @@ char *leet(char *ch)
             if (toupper(*ch) == toupper(c[i]))
             {
                 *ch = num[i];
+				break;
             }
 			i++;
         }
