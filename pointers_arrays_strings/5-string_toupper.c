@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* reverse_array - Entry point
-* Description: concat 2 strings.
+* string_toupper - Entry point
+* Description: change string char to uppercase.
 * Return: string
 */
 char *string_toupper(char *ch)
