@@ -15,11 +15,11 @@ char *_strchr(char *s, char c)
 		{
 			return (s);
 		}
+		s++;
 		if (*s == '\0')
 		{
 			s = NULL;
 		}
-		s++;
 	}
 	return (s);
 }
