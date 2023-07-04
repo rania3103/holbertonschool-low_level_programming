@@ -17,9 +17,9 @@ char *_strchr(char *s, char c)
 		}
 		if (*s == '\0')
 		{
-			return ("nill");
+			return (NULL);
 		}
 		s++;
 	}
-	return (NULL);
+	return ("nil");
 }
