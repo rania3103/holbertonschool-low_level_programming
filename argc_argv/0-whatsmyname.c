@@ -5,7 +5,7 @@
  * Description: a program that prints its name.
  * @argc:argc
  * @argv:argv
- * Return : 0
+ * Return: 0
 */
 int main(int argc, char *argv[])
 {
