@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	}
 	while (i < argc)
 	{
-		while(argv[i][j] != '\0')
+		while (argv[i][j] != '\0')
 		{
 			if (argv[i][j] < '0' && argv[i][j] > '9')
 			{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 			j++;
 		}
 		res += atoi(argv[i]);
-		i++;  
+		i++;
 	}
 	printf("%d\n", res);
 	return (0);
