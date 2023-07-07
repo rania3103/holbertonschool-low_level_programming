@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 {
 	int res = 0;
 	int i = 0;
+	int j = 0;
+
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
@@ -20,11 +22,9 @@ int main(int argc, char *argv[])
 	}
 	while (i < argc)
 	{
-		int j = 0;
-
 		while (argv[i][j] != '\0')
 		{
-			if (argv[i][j] < '0' && argv[i][j] > '9')
+			if (!(isdigit(argv[i][j])))
 			{
 				printf("%s\n", "Error");
 				return (1);
