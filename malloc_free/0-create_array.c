@@ -5,7 +5,7 @@
 * Description: create an array.
 * @size :unsigned int
 * @c: char
-* Return : pointer
+* Return: pointer
 */
 char *create_array(unsigned int size, char c)
 {
@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		ptr = (char *) malloc(size * sizeof(char));
-		if (ptr == 	NULL)
+		if (ptr == NULL)
 		{
 			return (NULL);
 		}
