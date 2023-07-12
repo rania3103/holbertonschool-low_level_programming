@@ -30,6 +30,6 @@ char *_strdup(char *str)
 		ptr++;
 	}
 	*ptr = '\0';
-	free(ptr);
 	return (ptr2);
+	free(ptr);
 }
