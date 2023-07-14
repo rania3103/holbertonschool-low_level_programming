@@ -5,8 +5,8 @@
 * Description: print the filename.
 * Return:0
 */
-int main (void)
+int main(void)
 {
-	printf("%s\n",filename);
+	printf("%s\n", filename);
 	return (0);
 }
