@@ -23,6 +23,10 @@ int *array_range(int min, int max)
 		nb += 1;
 	}
 	ptr = malloc(sizeof(int) * nb);
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
 	for (i = min; i <= max; i++)
 	{
 		ptr[j] = i;
