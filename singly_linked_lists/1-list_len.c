@@ -14,7 +14,7 @@ size_t list_len(const list_t *h)
 
 	while (current != NULL)
 	{
-		if (current->str != NULL && current->len != 0)
+		if ((current->str != NULL || current->str) && current->len != 0)
 		{
 			nb++;
 		}
