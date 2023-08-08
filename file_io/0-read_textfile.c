@@ -17,28 +17,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fdesc = open(filename, O_RDONLY);
 	if (fdesc == -1)
 	{
-		close(fdesc);
 		return (0);
 	}
 	container = malloc(letters * sizeof(char));
 	if (container == NULL)
 	{
-		free(container);
-		close(fdesc);
 		return (0);
 	}
 	r = read(fdesc, container, letters);
 	if (r == -1)
 	{
-		free(container);
-		close(fdesc);
 		return (0);
 	}
-	w = write(1, container, r);
+	w = write(STDOUT_FILENO, container, r);
 	if (w == -1)
 	{
-		free(container);
-		close(fdesc);
 		return (0);
 	}
 	close(fdesc);
