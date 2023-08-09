@@ -13,7 +13,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	fdesc = open(filename, O_APPEND);
+	fdesc = open(filename, O_WRONLY | O_APPEND);
 	if (fdesc == -1 )
 	{
 		return (-1);
@@ -23,7 +23,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		w = write(fdesc, text_content, strlen(text_content));
 		if (w == -1)
 		{
-			return (1);
+			return (-1);
 		}
 	}
 	close(fdesc);
