@@ -30,17 +30,18 @@ int main(int argc, char *argv[])
 	fdesc1 = open(file_from, O_RDONLY);
 	if (fdesc1 == -1)
 		print_message("Error: Can't read from file %s\n", file_from, 98);
-	fdesc2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	fdesc2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fdesc2 == -1)
 		print_message("Error: Can't write to %s\n", file_to, 99);
-	if (container != NULL)
+	while (r = read(fdesc1, container, sizeof(container)) > 0)
 	{
-		r = read(fdesc1, container, sizeof(container));
-		if (r == -1)
-			print_message("Error: Can't read from file %s\n", file_from, 98);
 		w = write(fdesc2, container, r);
 		if (w == -1)
 			print_message("Error: Can't write to %s\n", file_to, 99);
+	}
+	if (r == -1)
+	{
+		print_message("Error: Can't read from file %s\n", file_from, 98);
 	}
 	if (close(fdesc1) == -1)
 	{
