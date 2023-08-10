@@ -34,6 +34,11 @@ int main(int argc, char *argv[])
 	if (container != NULL)
 	{
 		r = read(fdesc1, container, sizeof(container));
+		if (r == -1)
+		{
+			dprintf(2, "Error: Can't read from file %s\n", file_from);
+			exit(98);
+		}
 		w = write(fdesc2, container, r);
 		if (w == -1)
 		{
