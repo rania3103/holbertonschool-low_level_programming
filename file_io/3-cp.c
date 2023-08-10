@@ -6,7 +6,7 @@
  * @argv:the vector of arguments.
  * Return:0 on success
  */
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int fdesc1, fdesc2, r, w;
 	char *file_to, *file_from;
