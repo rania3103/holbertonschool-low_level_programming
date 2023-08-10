@@ -7,7 +7,7 @@
 */
 void print_message(char *msg, char *filename, int excode)
 {
-	dprintf(ST, msg, filename);
+	dprintf(2, msg, filename);
 	exit(excode);
 }
 /**
