@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	fdesc2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fdesc2 == -1)
 		print_message("Error: Can't write to %s\n", file_to, 99);
-	while (r = read(fdesc1, container, sizeof(container)) > 0)
+	while ((r = read(fdesc1, container, sizeof(container))) > 0)
 	{
 		w = write(fdesc2, container, r);
 		if (w == -1)
