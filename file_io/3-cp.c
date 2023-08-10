@@ -4,7 +4,7 @@
  * @msg:the msg to be printed.
  * @filename:name of the file.
  * @excode: exit code.
-*/
+ */
 void print_message(char *msg, char *filename, int excode)
 {
 	dprintf(2, msg, filename);
@@ -29,7 +29,10 @@ int main(int argc, char *argv[])
 		print_message("Usage: cp file_from file_to\n", "", 97);
 	fdesc1 = open(file_from, O_RDONLY);
 	if (fdesc1 == -1)
-		print_message("Error: Can't read from file %s\n", file_from, 98);
+	{
+		dprintf(1, "Error: Can't read from file %s\n", file_from);
+		exit(98);
+	}
 	fdesc2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fdesc2 == -1)
 		print_message("Error: Can't write to %s\n", file_to, 99);
