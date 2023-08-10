@@ -23,13 +23,13 @@ int main(int argc, char *argv[])
 	if (fdesc1 == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
-		exist(98);
+		exit(98);
 	}
 	fdesc2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	if (fdesc2 == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", file_to);
-		exist(99);
+		exit(99);
 	}
 	if (container != NULL)
 	{
