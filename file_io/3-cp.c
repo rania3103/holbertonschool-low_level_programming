@@ -53,10 +53,10 @@ int main(int argc, char *argv[])
 		}
 	}
 	if (close(fdesc1) == -1)
-	{
-		dprintf(2, "Error: Can't close fd %d\n", fdesc1, 100);
-	}
+		dprintf(2, "Error: Can't close fd %d\n", fdesc1);
+		exit(100);
 	if (close(fdesc2) == -1)
-		dprintf(2, "Error: Can't close fd %d\n", fdesc2, 100);
+		dprintf(2, "Error: Can't close fd %d\n", fdesc2);
+		exit(100);
 	return (0);
 }
