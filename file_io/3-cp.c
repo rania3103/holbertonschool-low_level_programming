@@ -7,7 +7,7 @@
 */
 void print_message(char *msg, char *filename, int excode)
 {
-	dprintf(2, msg, filename);
+	dprintf(ST, msg, filename);
 	exit(excode);
 }
 /**
@@ -54,9 +54,9 @@ int main(int argc, char *argv[])
 	}
 	if (close(fdesc1) == -1)
 	{
-		print_message("Error: Can't close fd %d\n", fdesc1, 100);
+		print_message("Error: Can't close fd %d\n","", 100);
 	}
 	if (close(fdesc2) == -1)
-		print_message("Error: Can't close fd %d\n", fdesc2, 100);
+		print_message("Error: Can't close fd %d\n","", 100);
 	return (0);
 }
