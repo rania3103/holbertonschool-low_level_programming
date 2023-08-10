@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		w = write(fdesc2, container, r);
 		if (w == -1)
 		{
-			dprintf("Error: Can't write to %s\n", file_to);
+			dprintf(2, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
 	}
