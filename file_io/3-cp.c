@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	fdesc1 = open(file_from, O_RDONLY);
-	if (fdesc == -1)
+	if (fdesc1 == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
 		exist(98);
