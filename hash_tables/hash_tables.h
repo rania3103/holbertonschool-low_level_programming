@@ -1,5 +1,5 @@
 #ifndef hashtab
-#define hastab
+#define hashtab
 #include <stdio.h>
 #include <stdlib.h>
 /**
