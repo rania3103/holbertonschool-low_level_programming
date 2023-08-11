@@ -8,27 +8,27 @@
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_table_t *tmp;
+	hash_node_t *tmp;
 	unsigned long int i;
 
 	if (ht == NULL || key == NULL || *key == '\0')
 	{
 		return (0);
 	}
-	i = key_index(const char *key, ht->size);
+	i = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[i];
 	while (tmp != NULL)
 	{
-		if (tmp->key == key)
+		if (strcmp(tmp->key, key) == 0)
 		{
-			tmp->value = stdup(value);
+			tmp->value = strdup(value);
 			if (tmp->value == NULL)
 			{
-				return (NULL);
+				return (0);
 			}
 		}
 		tmp = tmp->next;
 	}
-
+	
 	return (1);
 }
